@@ -20,7 +20,7 @@ if( !in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) { // rem
 
 try
 {
-    $dbh = new PDO("mysql:host=$ip;dbname=$dbname;charset=utf8", MY_ROOT, MY_LOG);
+    $dbh = new PDO("mysql:host=$ip;dbname=$dbname;charset=utf8", MY_LOG, MY_PWD);
 }
 catch (PDOException $e)
 {
