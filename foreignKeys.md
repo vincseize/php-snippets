@@ -1,6 +1,4 @@
-###SQL
-
----
+### SQL
 
 - get all FK from a Database
 
@@ -33,8 +31,6 @@ WHERE A.id_wines = 2;
 ---
 
 ### PHP
-
----
 
 <code>
 include 'inc_connect.php';
