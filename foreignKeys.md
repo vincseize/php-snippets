@@ -1,5 +1,7 @@
 ###SQL
 
+---
+
 - get all FK from a Database
 
 <code>
@@ -8,7 +10,7 @@ FROM information_schema.TABLE_CONSTRAINTS
 WHERE CONSTRAINT_TYPE = 'FOREIGN KEY'
 </code>
 
-***
+---
 
 - get all FK from a Table
 
@@ -18,7 +20,7 @@ WHERE CONSTRAINT_TYPE = 'FOREIGN KEY'
 AND information_schema.TABLE_CONSTRAINTS.TABLE_NAME = 'your_table';
 </code>
 
---
+---
 
 - get unique FK from a Table Column
 
@@ -32,11 +34,13 @@ WHERE A.id_wines = 2;
 
 ### PHP
 
+---
+
 <code>
 include 'inc_connect.php';
 </code>
 
---
+---
 
 - get all FK from a Database
 
@@ -54,7 +58,7 @@ print_r($result);
 // }
 </code>
 
---
+---
 
 - get unique FK from a Table Column
 
@@ -71,4 +75,4 @@ while($row = mysqli_fetch_assoc($result)){
   
 </code>
 
---
+---
