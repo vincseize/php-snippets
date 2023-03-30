@@ -41,7 +41,6 @@ include 'inc_connect.php';
 - get all FK from a Database
 
 <code>
-
 $sql_getfk = "SELECT *
 FROM information_schema.TABLE_CONSTRAINTS
 WHERE CONSTRAINT_TYPE = 'FOREIGN KEY'";
