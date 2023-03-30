@@ -33,7 +33,12 @@ WHERE A.id_wines = 2;
 ### PHP
 
 <code>
-include 'inc_connect.php';
+// include 'inc_connect.php';
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "cheezyapp";
+$link = new mysqli($servername, $username, $password, $dbname);
 </code>
 
 ---
