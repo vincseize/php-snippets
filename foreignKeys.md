@@ -1,6 +1,7 @@
 ###SQL
 
 - get all FK from a Database
+
 <code>
 SELECT *
 FROM information_schema.TABLE_CONSTRAINTS
@@ -8,9 +9,9 @@ WHERE CONSTRAINT_TYPE = 'FOREIGN KEY'
 </code>
 
 - get all FK from a Table
-<sql code>
-SELECT *
-FROM information_schema.TABLE_CONSTRAINTS
+
+<code>
+SELECT * FROM information_schema.TABLE_CONSTRAINTS
 WHERE CONSTRAINT_TYPE = 'FOREIGN KEY'
 AND information_schema.TABLE_CONSTRAINTS.TABLE_NAME = 'your_table';
 </code>
@@ -18,6 +19,7 @@ AND information_schema.TABLE_CONSTRAINTS.TABLE_NAME = 'your_table';
 ### PHP
 
 - get all FK from a Database
+
 <code>
 include 'inc_connect.php';
 
@@ -31,4 +33,4 @@ print_r($result);
 //     $fk_table = $row["FK Table"];
 //     $fk_column = $row["FK Column"];
 // }
-  </code>
+</code>
