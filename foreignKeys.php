@@ -5,5 +5,5 @@
 SELECT *
 FROM information_schema.TABLE_CONSTRAINTS
 WHERE CONSTRAINT_TYPE = 'FOREIGN KEY'
-AND information_schema.TABLE_CONSTRAINTS.TABLE_NAME = 'cheeses';
+AND information_schema.TABLE_CONSTRAINTS.TABLE_NAME = 'your_table';
 </code>
