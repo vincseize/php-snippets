@@ -8,7 +8,7 @@ FROM information_schema.TABLE_CONSTRAINTS
 WHERE CONSTRAINT_TYPE = 'FOREIGN KEY'
 </code>
 
---
+***
 
 - get all FK from a Table
 
