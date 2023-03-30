@@ -58,16 +58,13 @@ print_r($result);
 - get unique FK from a Table Column
 
 <code>
-
 $sql_getfk = "SELECT B.* FROM cheeses A INNER JOIN wines B ON A.id_wines = B.id_wines WHERE A.id_wines = 2;";
 $result = mysqli_query($link, $sql_getfk);
 print_r($result);
 echo "<br />";
 while($row = mysqli_fetch_assoc($result)){
     echo $row['name'];
-    
 }
-  
 </code>
 
 ---
