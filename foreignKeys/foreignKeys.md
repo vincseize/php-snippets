@@ -28,6 +28,15 @@ INNER JOIN wines B ON A.id_wines = B.id_wines
 WHERE A.id_wines = 2;
 </code>
 
+
+---
+
+- get Primary Key from a Table
+
+<code>
+SHOW KEYS FROM your_table
+</code>
+
 ---
 
 ### PHP
@@ -37,7 +46,7 @@ WHERE A.id_wines = 2;
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "cheezyapp";
+$dbname = "your_db";
 $link = new mysqli($servername, $username, $password, $dbname);
 </code>
 
@@ -69,6 +78,20 @@ print_r($result);
 echo "<br />";
 while($row = mysqli_fetch_assoc($result)){
     echo $row['name'];
+}
+</code>
+
+---
+
+- get Primary Key from a Table
+
+<code>
+$query = 'SHOW KEYS FROM your_table';
+$result = mysqli_query($link,$query) or die(mysql_error());
+while ($row = mysqli_fetch_array($result)) {
+  if ($row['Key_name'] == 'PRIMARY') {
+    echo $row['Column_name'];
+  }
 }
 </code>
 
