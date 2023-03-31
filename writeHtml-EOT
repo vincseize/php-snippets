@@ -1,6 +1,6 @@
 <?php
-
-$indexfile = <<<'EOT'
+$var = "John Doe";
+$indexfile = <<<EOT // <<<HEREDOCS or what you want
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +20,9 @@ $indexfile = <<<'EOT'
 </head>
 <?php require_once('navbar.php'); ?>
 <body>
+?php echo {$var}; ?>
 ...
 </body>
 EOT;
 
- ?>
+?>
