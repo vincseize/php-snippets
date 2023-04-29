@@ -49,6 +49,9 @@ The rest of the PRs about TVs, bots or optimizations will be closed and analyzed
 
 ```php
 require_once "libs/Mobile_Detect.php";
+if ( $detect->isMobile() ) {
+    // your code
+}
 ```
 
 **Install as a [composer package](https://packagist.org/packages/mobiledetect/mobiledetectlib)**
